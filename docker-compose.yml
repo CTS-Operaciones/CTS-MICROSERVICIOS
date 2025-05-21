@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  nats-server: 
+    image: nats
+    ports:
+      - "8222:8222"
