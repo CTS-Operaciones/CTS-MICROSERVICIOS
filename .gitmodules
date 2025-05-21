@@ -1,0 +1,6 @@
+[submodule "rh-ms"]
+	path = rh-ms
+	url = git@github.com:EscAdn/CTS-RECURSOS-HUMANOS-MS.git
+[submodule "client-gateway-ms"]
+	path = client-gateway-ms
+	url = git@github.com:EscAdn/CTS-CLIENT-GATEWAY-MS.git
