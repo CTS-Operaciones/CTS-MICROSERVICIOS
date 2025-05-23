@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   nats-server: 
     image: nats
@@ -14,3 +12,31 @@ services:
       POSTGRES_DB: ${DB_DB}
     ports:
       - "${DB_PORT}:5432"
+  
+  client-gateway-ms:
+    build: ./client-gateway-ms/
+    ports:
+      - ${GATEWAY_PORT_HTTP}:3000
+    volumes:
+      - ./client-gateway-ms/src:/app/src
+    command: pnpm start:dev
+    environment:
+      - PORT_APP=3010
+      - NATS_SERVERS=nats://localhost:4222
+  
+  rh-ms:
+    build: ./rh-ms/
+    volumes:
+      - ./rh-ms/src:/app/src
+    command: pnpm start:docker
+    environment:
+      - PORT_APP=3020
+      - NATS_SERVERS=nats://localhost:4222
+      - DB_NAME=cts-db
+      - DB_SERVER=localhost
+      - DB_USER=esc
+      - DB_PASSWORD=escadn2325
+      - DB_PORT=5433
+      - DEBBUGER_LOGS=false
+    depends_on:
+      - database
