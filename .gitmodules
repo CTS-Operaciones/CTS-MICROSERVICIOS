@@ -4,3 +4,6 @@
 [submodule "client-gateway-ms"]
 	path = client-gateway-ms
 	url = git@github.com:EscAdn/CTS-CLIENT-GATEWAY-MS.git
+[submodule "auth-ms"]
+	path = auth-ms
+	url = git@github.com:EscAdn/auth-microservice.git
