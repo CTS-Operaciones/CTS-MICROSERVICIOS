@@ -7,6 +7,3 @@
 [submodule "auth-ms"]
 	path = auth-ms
 	url = git@github.com:EscAdn/auth-microservice.git
-[submodule "entities-ms"]
-	path = entities-ms
-	url = git@github.com:CTS-Operaciones/SHARED-ENTITIES-MS.git
