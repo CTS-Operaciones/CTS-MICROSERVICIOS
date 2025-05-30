@@ -7,3 +7,6 @@
 [submodule "auth-ms"]
 	path = auth-ms
 	url = git@github.com:EscAdn/auth-microservice.git
+[submodule "staffing-ms"]
+	path = staffing-ms
+	url = git@github.com:CTS-Operaciones/CTS-STAFFING-MS.git
