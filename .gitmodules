@@ -10,3 +10,6 @@
 [submodule "staffing-ms"]
 	path = staffing-ms
 	url = git@github.com:CTS-Operaciones/CTS-STAFFING-MS.git
+[submodule "op-ms"]
+	path = op-ms
+	url = git@github.com:CTS-Operaciones/CTS-OPERATIONS-MS.git
