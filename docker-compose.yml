@@ -1,10 +1,10 @@
 services:
-  nats-server: 
+  nats-server:
     image: nats
     ports:
       - "8222:8222"
       - "4222:4222"
-  
+
   database:
     image: postgres:16.9-alpine3.21
     environment:
@@ -15,18 +15,18 @@ services:
       - "${DB_PORT}:5432"
     volumes:
       - ./postgres-data:/var/lib/postgresql/data
-  
+
   client-gateway-ms:
     build: ./client-gateway-ms/
     ports:
-      - ${GATEWAY_PORT_HTTP}:3000
+      - ${GATEWAY_PORT_HTTP}:${GATEWAY_PORT_HTTP}
     volumes:
       - ./client-gateway-ms/src:/app/src
-    command: pnpm start:dev
+    command: pnpm dev
     environment:
-      - PORT_APP=3010
-      - NATS_SERVERS=nats://localhost:4222
-  
+      - PORT_APP=${GATEWAY_PORT_HTTP}
+      - NATS_SERVERS=nats://nats-server:4222
+
   rh-ms:
     build: ./rh-ms/
     volumes:
@@ -34,12 +34,12 @@ services:
     command: pnpm start:docker
     environment:
       - PORT_APP=3020
-      - NATS_SERVERS=nats://localhost:4222
-      - DB_NAME=cts-db
-      - DB_SERVER=localhost
+      - NATS_SERVERS=nats://nats-server:4222
+      - DB_NAME=cts_db
+      - DB_SERVER=database
       - DB_USER=esc
       - DB_PASSWORD=escadn2325
-      - DB_PORT=5433
+      - DB_PORT=5432
       - DEBBUGER_LOGS=false
     depends_on:
       - database
