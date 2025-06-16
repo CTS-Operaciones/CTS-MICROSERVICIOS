@@ -13,3 +13,6 @@
 [submodule "op-ms"]
 	path = op-ms
 	url = git@github.com:CTS-Operaciones/CTS-OPERATIONS-MS.git
+[submodule "cts-entities"]
+	path = cts-entities
+	url = git@github.com:CTS-Operaciones/CTS-ENTITIES-MS.git
