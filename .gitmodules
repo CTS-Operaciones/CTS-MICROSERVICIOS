@@ -16,3 +16,6 @@
 [submodule "cts-entities"]
 	path = cts-entities
 	url = git@github.com:CTS-Operaciones/CTS-ENTITIES-MS.git
+[submodule "saga-ms"]
+	path = saga-ms
+	url = git@github.com-cts:CTS-Operaciones/saga-altasBajas.git
