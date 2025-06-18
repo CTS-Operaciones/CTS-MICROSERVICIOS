@@ -26,20 +26,40 @@ services:
     environment:
       - PORT_APP=${GATEWAY_PORT_HTTP}
       - NATS_SERVERS=nats://nats-server:4222
+  
+  entities-ms:
+    build: ./cts-entities/
+    volumes:
+      - ./cts-entities/src:/app/src
+      - shared-libs:/shared
+    environment:
+      - PORT_APP=3005
+      - DB_NAME=${DB_DB}
+      - DB_SERVER=database
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_PORT=${DB_PORT}
+      - DEBBUGER_LOGS=false
+    depends_on:
+      - database
 
   rh-ms:
     build: ./rh-ms/
     volumes:
       - ./rh-ms/src:/app/src
-    command: pnpm start:docker
+      - shared-libs:/shared
+    command: pnpm dev
     environment:
       - PORT_APP=3020
       - NATS_SERVERS=nats://nats-server:4222
-      - DB_NAME=cts_db
+      - DB_NAME=${DB_DB}
       - DB_SERVER=database
-      - DB_USER=esc
-      - DB_PASSWORD=escadn2325
-      - DB_PORT=5432
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_PORT=${DB_PORT}
       - DEBBUGER_LOGS=false
     depends_on:
-      - database
+      - entities-ms
+
+volumes:
+  shared-libs:
