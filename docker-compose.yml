@@ -26,6 +26,7 @@ services:
     environment:
       - PORT_APP=${GATEWAY_PORT_HTTP}
       - NATS_SERVERS=nats://nats-server:4222
+      - FOLDER_PDFS=./pdfs
   
   entities-ms:
     build: ./cts-entities/
