@@ -19,3 +19,6 @@
 [submodule "saga-ms"]
 	path = saga-ms
 	url = git@github.com-cts:CTS-Operaciones/saga-altasBajas.git
+[submodule "notificatios-ms"]
+	path = notificatios-ms
+	url = git@github.com:CTS-Operaciones/CTS-NOTIFICATIONS.git
