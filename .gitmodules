@@ -22,3 +22,6 @@
 [submodule "notificatios-ms"]
 	path = notificatios-ms
 	url = git@github.com:CTS-Operaciones/CTS-NOTIFICATIONS.git
+[submodule "marketing-ms"]
+	path = marketing-ms
+	url = git@github.com:CTS-Operaciones/CTS-MARKETING.git
