@@ -10,85 +10,85 @@ VALUES
 (12, '2025-08-01 18:25:10.954077', true, '2025-08-01 18:25:10.954077', NULL, 'PROYECTOS', 'PROY');
 
 
-INSERT INTO public.salary
-(id, created_at, available, updated_at, deleted_at, amount, salary_in_words)
-VALUES
-(1, '2025-07-08 16:26:42.715', true, '2025-07-08 16:26:42.715', NULL, '25000.00', 'Veinticinco mil quinientos'),
-(2, '2025-07-08 16:26:12.236', true, '2025-07-08 16:26:12.236', NULL, '85000.00', 'Ocho mil quinientos'),
-(3, '2025-07-08 16:28:07.681', true, '2025-07-08 16:28:07.681', NULL, '18000.00', 'Dieciocho mil'),
-(4, '2025-07-08 17:02:03.58',  true, '2025-07-08 17:02:03.58',  NULL, '15000.00', 'Quince mil'),
-(5, '2025-08-01 17:12:36.142637', true, '2025-08-01 17:12:36.142637', NULL, '40000.00', 'Cuarenta mil'),
-(6, '2025-08-01 17:14:31.163952', true, '2025-08-01 17:14:31.163952', NULL, '20000.00', 'Veinte mil'),
-(7, '2025-08-01 18:26:36.281201', true, '2025-08-01 18:26:36.281201', NULL, '50000.00', 'Cincuenta mil'),
-(9, '2025-08-01 18:43:11.247179', true, '2025-08-01 18:43:11.247179', NULL, '30000.00', 'Treinta mil');
 
 
-INSERT INTO public.positions
-(id, created_at, available, updated_at, deleted_at, name, "salaryId", "departmentId", "parentId", "requiredBoss")
-VALUES
-(37, '2025-08-04 17:05:01.235884', true, '2025-08-04 17:05:01.235884', NULL, 'Director general', 7, 6, NULL, false),
-(38, '2025-08-04 17:05:39.564131', true, '2025-08-04 17:05:39.564131', NULL, 'Coordinador de normatividad y procesos', 5, 8, NULL, false),
-(39, '2025-08-04 17:05:57.210283', true, '2025-08-04 17:05:57.210283', NULL, 'Director de tecnologías', 5, 7, NULL, false),
-(40, '2025-08-04 17:06:11.610395', true, '2025-08-04 17:06:11.610395', NULL, 'Director de finanzas', 5, 9, NULL, false),
-(41, '2025-08-04 17:06:25.032695', true, '2025-08-04 17:06:25.032695', NULL, 'Director de administración', 5, 10, NULL, false),
-(42, '2025-08-04 17:06:39.325483', true, '2025-08-04 17:06:39.325483', NULL, 'Director de operaciones', 5, 11, NULL, false),
-(43, '2025-08-04 17:06:55.746591', true, '2025-08-04 17:06:55.746591', NULL, 'Director de proyectos', 5, 12, NULL, false),
-(44, '2025-08-04 17:07:40.524836', true, '2025-08-04 17:07:40.524836', NULL, 'Coordinación de soporte técnico', 9, 7, 39, false),
-(45, '2025-08-04 17:08:14.616838', true, '2025-08-04 17:08:14.616838', NULL, 'Coordinación de desarrollo de infraestructura tecnologíca', 9, 7, 39, false),
-(46, '2025-08-04 17:09:28.540563', true, '2025-08-04 17:09:28.540563', NULL, 'Coordinación de contabilidad y finanzas', 9, 9, 40, false),
-(47, '2025-08-04 17:09:45.047273', true, '2025-08-04 17:09:45.047273', NULL, 'Coordinador general de administración', 9, 10, 41, false),
-(48, '2025-08-04 17:10:20.116208', true, '2025-08-04 17:10:20.116208', NULL, 'Coordinación general de operaciones', 9, 11, 42, false),
-(49, '2025-08-04 19:34:50.372277', true, '2025-08-04 19:34:50.372277', NULL, 'Coordinación de proyectos', 9, 12, 43, false),
-(50, '2025-08-04 19:41:43.340583', true, '2025-08-04 19:41:43.340583', NULL, 'Coordinación de recursos humanos', 1, 10, 47, false),
-(51, '2025-08-04 19:42:00.065102', true, '2025-08-04 19:42:00.065102', NULL, 'Coordinación de recursos materiales y servicios generales', 1, 10, 47, false),
-(57, '2025-08-04 19:54:15.133', true, '2025-08-05 15:49:50.81354', NULL, 'Coordinación de ejemplo a actualizar', 6, 6, 38, false),
-(52, '2025-08-04 19:42:28.45715', true, '2025-08-04 19:42:28.45715', NULL, 'Coordinación de preparación documental', 1, 11, 48, true),
-(53, '2025-08-04 19:42:32.299819', true, '2025-08-04 19:42:32.299819', NULL, 'Coordinación de transformación digital', 1, 11, 48, true),
-(54, '2025-08-04 19:42:41.716573', true, '2025-08-04 19:42:41.716573', NULL, 'Coordinación de calidad', 1, 11, 48, true),
-(55, '2025-08-04 19:42:50.844291', true, '2025-08-04 19:42:50.844291', NULL, 'Coordinación de captura', 1, 11, 48, true);
+INSERT INTO public.salary (id,created_at,available,updated_at,deleted_at,amount,salary_in_words) VALUES
+	 (1,'2025-07-08 16:26:42.715',true,'2025-07-08 16:26:42.715',NULL,$25,000.00,'Veinticinco mil quinientos'),
+	 (2,'2025-07-08 16:26:12.236',true,'2025-07-08 16:26:12.236',NULL,$8,500.00,'Ocho mil quinientos'),
+	 (3,'2025-07-08 16:28:07.681',true,'2025-07-08 16:28:07.681',NULL,$18,000.00,'Dieciocho mil'),
+	 (4,'2025-07-08 17:02:03.580',true,'2025-07-08 17:02:03.580',NULL,$15,000.00,'Quince mil'),
+	 (5,'2025-08-01 17:12:36.142',true,'2025-08-01 17:12:36.142',NULL,$40,000.00,'Cuarenta mil'),
+	 (6,'2025-08-01 17:14:31.163',true,'2025-08-01 17:14:31.163',NULL,$20,000.00,'Veinte mil'),
+	 (7,'2025-08-01 18:26:36.281',true,'2025-08-01 18:26:36.281',NULL,$50,000.00,'Cincuenta mil'),
+	 (9,'2025-08-01 18:43:11.247',true,'2025-08-01 18:43:11.247',NULL,$30,000.00,'Treinta mil');
 
-INSERT INTO public.positions_closure
-(id_ancestor, id_descendant)
-VALUES
-(37, 37),
-(38, 38),
-(39, 39),
-(40, 40),
-(41, 41),
-(42, 42),
-(43, 43),
-(44, 44),
-(39, 44),
-(45, 45),
-(39, 45),
-(46, 46),
-(40, 46),
-(47, 47),
-(41, 47),
-(48, 48),
-(42, 48),
-(49, 49),
-(43, 49),
-(50, 50),
-(47, 50),
-(41, 50),
-(51, 51),
-(47, 51),
-(41, 51),
-(52, 52),
-(48, 52),
-(42, 52),
-(53, 53),
-(48, 53),
-(42, 53),
-(54, 54),
-(48, 54),
-(42, 54),
-(55, 55),
-(48, 55),
-(42, 55),
-(57, 57),
-(38, 57);
+
+
+INSERT INTO public.positions (id,created_at,available,updated_at,deleted_at,"requiredBoss","name",salary_id,department_id,"parentId") VALUES
+	 (37,'2025-08-04 17:05:01.235',true,'2025-08-04 17:05:01.235',NULL,false,'Director general',7,6,NULL),
+	 (38,'2025-08-04 17:05:39.564',true,'2025-08-04 17:05:39.564',NULL,false,'Coordinador de normatividad y procesos',5,8,NULL),
+	 (39,'2025-08-04 17:05:57.21',true,'2025-08-04 17:05:57.21',NULL,false,'Director de tecnologías',5,7,NULL),
+	 (40,'2025-08-04 17:06:11.61',true,'2025-08-04 17:06:11.61',NULL,false,'Director de finanzas',5,9,NULL),
+	 (41,'2025-08-04 17:06:25.032',true,'2025-08-04 17:06:25.032',NULL,false,'Director de administración',5,10,NULL),
+	 (42,'2025-08-04 17:06:39.325',true,'2025-08-04 17:06:39.325',NULL,false,'Director de operaciones',5,11,NULL),
+	 (43,'2025-08-04 17:06:55.746',true,'2025-08-04 17:06:55.746',NULL,false,'Director de proyectos',5,12,NULL),
+	 (44,'2025-08-04 17:07:40.524',true,'2025-08-04 17:07:40.524',NULL,false,'Coordinación de soporte técnico',9,7,39),
+	 (45,'2025-08-04 17:08:14.616',true,'2025-08-04 17:08:14.616',NULL,false,'Coordinación de desarrollo de infraestructura tecnologíca',9,7,39),
+	 (46,'2025-08-04 17:09:28.54',true,'2025-08-04 17:09:28.54',NULL,false,'Coordinación de contabilidad y finanzas',9,9,40),
+	 (47,'2025-08-04 17:09:45.047',true,'2025-08-04 17:09:45.047',NULL,false,'Coordinador general de administración',9,10,41),
+	 (48,'2025-08-04 17:10:20.116',true,'2025-08-04 17:10:20.116',NULL,false,'Coordinación general de operaciones',9,11,42),
+	 (49,'2025-08-04 19:34:50.372',true,'2025-08-04 19:34:50.372',NULL,false,'Coordinación de proyectos',9,12,43),
+	 (50,'2025-08-04 19:41:43.34',true,'2025-08-04 19:41:43.34',NULL,false,'Coordinación de recursos humanos',9,10,47),
+	 (51,'2025-08-04 19:42:00.065',true,'2025-08-04 19:42:00.065',NULL,false,'Coordinación de recursos materiales y servicios generales',9,10,47),
+	 (52,'2025-08-04 19:42:28.457',true,'2025-08-04 19:42:28.457',NULL,true,'Coordinación de preparación documental',1,11,48),
+	 (53,'2025-08-04 19:42:32.299',true,'2025-08-04 19:42:32.299',NULL,true,'Coordinación de transformación digital',1,11,48),
+	 (54,'2025-08-04 19:42:41.716',true,'2025-08-04 19:42:41.716',NULL,true,'Coordinación de calidad',1,11,48),
+	 (55,'2025-08-04 19:42:50.844',true,'2025-08-04 19:42:50.844',NULL,true,'Coordinación de captura',1,11,48),
+	 (56,'2025-09-13 18:34:39.876579',true,'2025-09-13 18:34:39.876579',NULL,true,'Digitalizador',3,11,53),
+	 (57,'2025-09-13 18:36:19.374039',true,'2025-09-13 18:36:19.374039',NULL,true,'Capturista',2,11,55),
+	 (58,'2025-09-13 18:39:42.938599',true,'2025-09-13 18:39:42.938599',NULL,true,'Preparador',2,11,52),
+	 (59,'2025-09-13 18:40:33.100373',true,'2025-09-13 18:40:33.100373',NULL,true,'Calidad',3,11,54),
+	 (60,'2025-09-13 18:59:32.036843',true,'2025-09-13 18:59:32.036843',NULL,true,'Desarrollador',3,7,45),
+	 (61,'2025-09-13 18:59:32.044539',true,'2025-09-13 18:59:32.044539',NULL,true,'Soporte',3,7,44);
+
+INSERT INTO public.positions_closure (id_ancestor,id_descendant) VALUES
+    (37,37),
+    (38,38),
+    (39,39),
+    (40,40),
+    (41,41),
+    (42,42),
+    (43,43),
+    (44,44),
+    (39,44),
+    (45,45),
+    (39,45),
+    (46,46),
+    (40,46),
+    (47,47),
+    (41,47),
+    (48,48),
+    (42,48),
+    (49,49),
+    (43,49),
+    (50,50),
+    (47,50),
+    (41,50),
+    (51,51),
+    (47,51),
+    (41,51),
+    (52,52),
+    (48,52),
+    (42,52),
+    (53,53),
+    (48,53),
+    (42,53),
+    (54,54),
+    (48,54),
+    (42,54),
+    (55,55),
+    (48,55),
+    (42,55);
 
 
 INSERT INTO public.type_contract
@@ -105,6 +105,16 @@ VALUES
 (2, '2025-07-08 16:23:57.784', true, '2025-07-08 16:23:57.784', NULL, 'HSBC'),
 (3, '2025-07-08 16:24:09.764', true, '2025-07-08 16:24:09.764', NULL, 'BANAMEX'),
 (4, '2025-07-08 16:24:15.642', true, '2025-07-08 16:24:15.642', NULL, 'BBVA');
+
+INSERT INTO public.types_bonds (id,created_at,available,updated_at,deleted_at,"type") VALUES
+	(1,'2025-09-18 14:27:52.219',true,'2025-09-18 14:27:52.219',NULL,'Bono por Proyecto.'),
+	(2,'2025-09-18 14:27:52.225',true,'2025-09-18 14:27:52.225',NULL,'Bono Indefinido.'),
+	(3,'2025-09-18 14:27:52.227',true,'2025-09-18 14:27:52.227',NULL,'Bono Temporal.'),
+	(4,'2025-09-18 14:27:52.230',true,'2025-09-18 14:27:52.230',NULL,'Ajuste de Salario.');
+
+INSERT INTO public.description_bonds (id,created_at,available,updated_at,deleted_at,description) VALUES
+	(1,'2025-09-18 14:27:09.704',true,'2025-09-18 14:27:09.704',NULL,'Bono de actuación.'),
+	(2,'2025-09-18 14:27:20.297',true,'2025-09-18 14:27:20.297',NULL,'Ajuste Salarial.');
 
 
 INSERT INTO public.employees
@@ -237,7 +247,7 @@ VALUES
 (5, '2025-07-10 21:11:33.999', true, '2025-07-10 21:11:33.999', NULL, 'asigned', NULL),
 (6, '2025-07-15 16:17:36.773', true, '2025-07-15 16:24:56.523295', NULL, 'prueba dev', 'Permiso de prueba para dev');
 
-INSERT INTO public."permission_has_ module"
+INSERT INTO public."permission_has_module"
 (id, created_at, available, updated_at, deleted_at, "permissionId", "moduleId")
 VALUES
 (1, '2025-07-10 23:56:58.814556', true, '2025-07-10 23:56:58.814556', NULL, 1, 1),
