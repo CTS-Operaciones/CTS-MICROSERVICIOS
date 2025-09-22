@@ -117,18 +117,62 @@ INSERT INTO public.description_bonds (id,created_at,available,updated_at,deleted
 	(2,'2025-09-18 14:27:20.297',true,'2025-09-18 14:27:20.297',NULL,'Ajuste Salarial.');
 
 
-INSERT INTO public.employees
-(id, created_at, available, updated_at, deleted_at, date_register, names, first_last_name, second_last_name, date_birth, year_old, email, telephone, address, gender, curp, rfc, nss, ine_number, alergy, emergency_contact, nacionality, status, blood_type, status_civil, number_account_bank, "bankId", "typeContractId")
+INSERT INTO public.employees (id, created_at, available, updated_at, deleted_at, names, first_last_name, second_last_name, date_birth, year_old, gender, curp, rfc, nss, ine_number, alergy, nacionality, status, blood_type) VALUES
+(3,'2025-07-08 16:47:13.814',true,'2025-07-08 16:47:13.814',NULL,'María','Sánchez','Pérez','1990-07-30',34,'Femenino','SAPE900730MDFRRS9','SAPE9007302H7','45678901234','C3456789012','Gluten','Mexicana','INACTIVE','B-'),
+(5,'2025-07-08 16:49:07.287',true,'2025-07-08 16:49:07.287',NULL,'Luis','Martínez','Gómez','1988-11-02',36,'Masculino','MAGO881102HDFMNR6','MAGO8811022E5','76543210987','E5678901234','Ninguna','Mexicana','ACTIVE','O-'),
+(6,'2025-07-08 16:49:21.799',true,'2025-07-08 16:49:21.799',NULL,'Juan','Hernández','López','2000-12-18',24,'Masculino','HELO001218HDFNNN3','HELO0012181D6','23456789012','F6789012345','Cacahuates','Mexicana','ACTIVE','O+'),
+(7,'2025-07-15 17:59:40.083446',true,'2025-07-15 17:59:40.083446',NULL,'Carl','First','Second','1993-03-22',31,'Masculino','GORA930322HDFNRR5','GORA9303221I8','98765432101','B2345678901','Pollen','Mexicana','ACTIVE','A+'),
+(1,'2025-07-08 16:45:19.77',true,'2025-07-08 16:45:19.77',NULL,'Alberto','Vincenso','Casano','1997-10-15',27,'Masculino','PEJ90515HDFGRR0','PEJJ9012151F9','12345678901','A1234567890','Ninguna','Mexicana','ACTIVE','O+'),
+(2,'2025-07-08 16:47:00.092',true,'2025-07-08 16:47:00.092',NULL,'Carlos','González','Ramírez','1993-03-22',31,'Masculino','GORA930322HDFNRR5','GORA9303221I8','98765432101','B2345678901','Pollen','Mexicana','ACTIVE','A+'),
+(8,'2025-07-14 19:29:18.803379',true,'2025-07-30 20:59:29.917992',NULL,'Juan','Hernández','López','2000-12-18',24,'Masculino','HELO001218HDFNNN3','HELO0012181D6','23456789012','F6789012345','Cacahuates','Mexicana','ACTIVE','O+'),
+(9,'2025-07-31 15:42:59.996617',true,'2025-07-31 15:42:59.996617',NULL,'Juan carlos','Ramírez','López','1990-05-14',35,'Masculino','RALJ900514HDFMPN01','RALJ900514ABC','98765432100','0100020003004','Ninguna','Mexicana','ACTIVE','A+'),
+(4,'2025-07-08 16:47:59.287',true,'2025-07-08 16:47:59.287',NULL,'Ana','Morales','Torres','1995-09-10',29,'Femenino','MOTA950910MDFRRR2','MOTA9509103C7','65432109876','D4567890123','Lactosa','Mexicana','ACTIVE','AB+'),
+(10,'2025-07-09 09:15:23',true,'2025-07-09 09:15:23',NULL,'Laura','Mendoza','Salinas','1989-05-12',36,'Femenino','MESL890512MPLNRL6','MESL8905123A2','34567890123','C3456789012','Penicilina','Mexicana','ACTIVE','B+'),
+(11,'2025-07-09 10:02:45',true,'2025-07-09 10:02:45',NULL,'José','Martínez','Lozano','1990-08-30',35,'Masculino','MALJ900830HDFRZS3','MALJ9008304K3','45678901234','D4567890123','Ninguna','Mexicana','ACTIVE','O-'),
+(12,'2025-07-10 08:30:10',true,'2025-07-10 08:30:10',NULL,'Paola','Hernández','Ruiz','1995-01-18',30,'Femenino','HERP950118MDFRZL5','HERP9501187Z8','56789012345','E5678901234','Mariscos','Mexicana','ACTIVE','AB+'),
+(13,'2025-07-10 09:55:45',true,'2025-07-10 09:55:45',NULL,'Luis','Torres','Gómez','1985-09-14',40,'Masculino','TOGL850914HJCMSL2','TOGL8509149T1','67890123456','F6789012345','Lácteos','Mexicana','ACTIVE','A-'),
+(14,'2025-07-11 11:22:33',true,'2025-07-11 11:22:33',NULL,'María','López','Valdez','1998-02-25',27,'Femenino','LOVM980225GGTPLR1','LOVM9802253A5','78901234567','G7890123456','Ninguna','Mexicana','ACTIVE','O+'),
+(15,'2025-07-11 13:40:19',true,'2025-07-11 13:40:19',NULL,'Fernando','Ramírez','Zavala','1992-06-10',33,'Masculino','RAZF920610HDFMNR3','RAZF9206106P2','89012345678','H8901234567','Picaduras de abeja','Mexicana','ACTIVE','B-'),
+(16,'2025-07-12 08:18:55',true,'2025-07-12 08:18:55',NULL,'Sandra','Navarro','Esquivel','1988-11-05',36,'Femenino','NAES881105NLNSNR7','NAES8811059W3','90123456789','I9012345678','Gluten','Mexicana','ACTIVE','A+'),
+(17,'2025-07-13 15:47:12',true,'2025-07-13 15:47:12',NULL,'Ricardo','Sánchez','Pineda','1996-04-08',29,'Masculino','SAPR960408HQTRND1','SAPR9604081M6','91234567890','J9123456789','Ninguna','Mexicana','ACTIVE','O-'),
+(18,'2025-07-13 17:05:30',true,'2025-07-13 17:05:30',NULL,'Daniela','Vega','Montiel','1994-12-03',30,'Femenino','VEMD941203MDFNRN3','VEMD9412032Q9','92345678901','K9234567890','Ninguna','Mexicana','ACTIVE','AB-'),
+(19,'2025-07-14 09:30:00',true,'2025-07-14 09:30:00',NULL,'Héctor','Cruz','Delgado','1987-07-22',38,'Masculino','CUDH870722YCTRRD2','CUDH8707227H7','93456789012','L9345678901','Polvo','Mexicana','ACTIVE','B+'),
+(20,'2025-09-12 10:15:00',true,'2025-09-12 10:15:00',NULL,'Isabel','Durán','Molina','1992-06-01',33,'Femenino','DUMI920601MDFRLS3','DUMI9206016Z3','12378945601','M1237894560','Ninguna','Mexicana','ACTIVE','O+'),
+(21,'2025-09-12 10:20:00',true,'2025-09-12 10:20:00',NULL,'Gerardo','Vargas','Nieto','1990-11-17',34,'Masculino','VANG901117HTLRTR1','VANG9011172P1','23456789012','N2345678901','Aspirina','Mexicana','ACTIVE','A+'),
+(22,'2025-09-12 10:25:00',true,'2025-09-12 10:25:00',NULL,'Tatiana','Gómez','Reyes','1988-03-11',37,'Femenino','GORT880311MDFRYS5','GORT8803117D4','34567890123','O3456789012','Ninguna','Mexicana','ACTIVE','B+'),
+(23,'2025-09-12 10:30:00',true,'2025-09-12 10:30:00',NULL,'Iván','Pérez','Castillo','1995-12-19',29,'Masculino','PECI951219HSLRST3','PECI9512191F2','45678901234','P4567890123','Lácteos','Mexicana','ACTIVE','AB-'),
+(24,'2025-09-12 10:35:00',true,'2025-09-12 10:35:00',NULL,'Camila','Ríos','Fernández','1999-01-07',26,'Femenino','RIFC990107MQTRMN8','RIFC9901079K6','56789012345','Q5678901234','Polvo','Mexicana','ACTIVE','O-'),
+(88,'2025-09-16 10:11:43.01815',true,'2025-09-16 10:11:43.01815',NULL,'Laura','Gómez','Ramírez','1998-07-22',27,'Femenino','GORL980722MNLLMR07','GORL9807221H5','34567890123','G9012345678','Ninguna','Mexicana','ACTIVE','A+');
+
+INSERT INTO public.employment_record
+(id, created_at, available, updated_at, deleted_at, date_register, date_end, reason, comment, email, telephone, address, emergency_contact, status_civil, number_account_bank, type_contract_id, bank_id, "employeeId")
 VALUES
-(1, '2025-07-08 16:45:19.77', true, '2025-07-08 16:45:19.77', NULL, '2020-04-25', 'Alberto', 'Vincenso', 'Casano', '1997-10-15', 27, 'albertovc@cts.com', '555-1234-5678', 'Calle ficticia 123, ciudad, estado', 'Masculino', 'PEJ90515HDFGRR0', 'PEJJ9012151F9', '12345678901', 'A1234567890', 'Ninguna', '[{"name":"Jhon Doe","relationship":"Padre","phone":"+525598765431"}]', 'Mexicana', 'ACTIVE', 'O+', 'Soltero/a', '123456789123456', 2, 3),
-(2, '2025-07-08 16:47:00.092', true, '2025-07-08 16:47:00.092', NULL, '2021-07-12', 'Carlos', 'González', 'Ramírez', '1993-03-22', 31, 'carlosgr@cts.com', '555-9876-5432', 'Av. reforma 456, ciudad, estado', 'Masculino', 'GORA930322HDFNRR5', 'GORA9303221I8', '98765432101', 'B2345678901', 'Pollen', '[{"name":"María González","relationship":"Madre","phone":"+525558765432"}]', 'Mexicana', 'ACTIVE', 'A+', 'Casado/a', '234567890123456', 3, 2),
-(3, '2025-07-08 16:47:13.814', true, '2025-07-08 16:47:13.814', NULL, '2019-11-05', 'María', 'Sánchez', 'Pérez', '1990-07-30', 34, 'marias@cts.com', '555-3456-7890', 'Calle libertad 789, ciudad, estado', 'Femenino', 'SAPE900730MDFRRS9', 'SAPE9007302H7', '45678901234', 'C3456789012', 'Gluten', '[{"name":"Ana Sánchez","relationship":"Hermana","phone":"+525512345678"}]', 'Mexicana', 'INACTIVE', 'B-', 'Divorciado/a', '345678901234567', 1, 1),
-(4, '2025-07-08 16:47:59.287', true, '2025-07-08 16:47:59.287', NULL, '2022-02-18', 'Ana', 'Morales', 'Torres', '1995-09-10', 29, 'anam@cts.com', '555-5678-1234', 'Paseo de la reforma 101, ciudad, estado', 'Femenino', 'MOTA950910MDFRRR2', 'MOTA9509103C7', '65432109876', 'D4567890123', 'Lactosa', '[{"name":"Luis Morales","relationship":"Esposo","phone":"+525589876543"}]', 'Mexicana', 'ACTIVE', 'AB+', 'Casado/a', '456789012345678', 2, 3),
-(5, '2025-07-08 16:49:07.287', true, '2025-07-08 16:49:07.287', NULL, '2023-01-14', 'Luis', 'Martínez', 'Gómez', '1988-11-02', 36, 'luism@cts.com', '555-8765-4321', 'Calle mayor 12, ciudad, estado', 'Masculino', 'MAGO881102HDFMNR6', 'MAGO8811022E5', '76543210987', 'E5678901234', 'Ninguna', '[{"name":"Laura Martínez","relationship":"Hermana","phone":"+525597654321"}]', 'Mexicana', 'ACTIVE', 'O-', 'Soltero/a', '567890123456789', 3, 2),
-(6, '2025-07-08 16:49:21.799', true, '2025-07-08 16:49:21.799', NULL, '2023-05-09', 'Juan', 'Hernández', 'López', '2000-12-18', 24, 'juanh@cts.com', '555-2345-6789', 'Calle del sol 345, ciudad, estado', 'Masculino', 'HELO001218HDFNNN3', 'HELO0012181D6', '23456789012', 'F6789012345', 'Cacahuates', '[{"name":"Pedro Hernández","relationship":"Padre","phone":"+525511234567"}]', 'Mexicana', 'ACTIVE', 'O+', 'Soltero/a', '678901234567890', 1, 1),
-(21, '2025-07-15 17:59:40.083446', true, '2025-07-15 17:59:40.083446', NULL, '2021-07-12', 'Carl', 'First', 'Second', '1993-03-22', 31, 'correo@hotmail.com', '555-9876-5432', 'Av. reforma 456, ciudad, estado', 'Masculino', 'GORA930322HDFNRR5', 'GORA9303221I8', '98765432101', 'B2345678901', 'Pollen', '[{"name":"María González","relationship":"Madre","phone":"+525558765432"}]', 'Mexicana', 'ACTIVE', 'A+', 'Casado/a', '234567890123456', 3, 2),
-(18, '2025-07-14 19:29:18.803379', true, '2025-07-30 20:59:29.917992', NULL, '2023-05-19', 'Juan', 'Hernández', 'López', '2000-12-18', 24, 'juanh@google.com', '555-2345-6789', 'Calle del sol 345, ciudad, estado', 'Masculino', 'HELO001218HDFNNN3', 'HELO0012181D6', '23456789012', 'F6789012345', 'Cacahuates', '[{"name":"Pedro Hernández","relationship":"Padre","phone":"+525511234567"}]', 'Mexicana', 'ACTIVE', 'O+', 'Soltero/a', '678901234567890', 1, 1),
-(22, '2025-07-31 15:42:59.996617', true, '2025-07-31 15:42:59.996617', NULL, '2025-07-30', 'Juan carlos', 'Ramírez', 'López', '1990-05-14', 35, 'juan.ramirez@example.com', '+5215512345678', 'Av. reforma 123, col. centro, cdmx', 'Masculino', 'RALJ900514HDFMPN01', 'RALJ900514ABC', '98765432100', '0100020003004', 'Ninguna', '[{"name":"María Ramírez","relationship":"Hermana","phone":"+525511122233"}]', 'Mexicana', 'ACTIVE', 'A+', 'Casado/a', '123456789012345678', 3, 1);
+(1,'2025-09-15 16:10:52.733005',true,'2025-09-15 16:10:52.733005',NULL,'2020-04-25',NULL,'a',NULL,'albertovc@cts.com','555-1234-5678','Calle ficticia 123, ciudad, estado','[{"name":"Jhon Doe","relationship":"Padre","phone":"+525598765431"}]'::jsonb,'Soltero/a','123456789123456',3,2,1),
+(2,'2025-09-15 16:12:11.389193',true,'2025-09-15 16:12:11.389193',NULL,'2021-07-12',NULL,'a',NULL,'carlosgr@cts.com','555-9876-5432','Av. reforma 456, ciudad, estado','[{"name":"María González","relationship":"Madre","phone":"+525558765432"}]'::jsonb,'Casado/a','234567890123456',2,3,2),
+(3,'2025-09-15 16:15:20.996325',true,'2025-09-15 16:15:20.996325',NULL,'2019-11-05',NULL,'a',NULL,'marias@cts.com','555-3456-7890','Calle libertad 789, ciudad, estado','[{"name":"Ana Sánchez","relationship":"Hermana","phone":"+525512345678"}]'::jsonb,'Divorciado/a','345678901234567',1,1,3),
+(4,'2025-09-15 16:15:21.005341',true,'2025-09-15 16:15:21.005341',NULL,'2022-02-18',NULL,'a',NULL,'anam@cts.com','555-5678-1234','Paseo de la reforma 101, ciudad, estado','[{"name":"Luis Morales","relationship":"Esposo","phone":"+525589876543"}]'::jsonb,'Casado/a','456789012345678',3,2,4),
+(5,'2025-09-15 16:17:03.890006',true,'2025-09-15 16:17:03.890006',NULL,'2023-01-14',NULL,'a',NULL,'luism@cts.com','555-8765-4321','Calle mayor 12, ciudad, estado','[{"name":"Laura Martínez","relationship":"Hermana","phone":"+525597654321"}]'::jsonb,'Soltero/a','567890123456789',2,3,5),
+(6,'2025-09-15 16:20:01.100001',true,'2025-09-15 16:20:01.100001',NULL,'2020-01-15',NULL,'a',NULL,'correo6@cts.com','555-1000-0006','Calle Reforma 6, Ciudad MX','[{"name":"Contacto6","relationship":"Hermano","phone":"+525510000006"}]'::jsonb,'Soltero/a','600000000000006',1,1,6),
+(7,'2025-09-15 16:20:01.200002',true,'2025-09-15 16:20:01.200002',NULL,'2020-02-15',NULL,'a',NULL,'correo7@cts.com','555-1000-0007','Calle Reforma 7, Ciudad MX','[{"name":"Contacto7","relationship":"Padre","phone":"+525510000007"}]'::jsonb,'Casado/a','700000000000007',2,2,7),
+(8,'2025-09-15 16:20:01.300003',true,'2025-09-15 16:20:01.300003',NULL,'2020-03-15',NULL,'a',NULL,'correo8@cts.com','555-1000-0008','Calle Reforma 8, Ciudad MX','[{"name":"Contacto8","relationship":"Madre","phone":"+525510000008"}]'::jsonb,'Divorciado/a','800000000000008',3,3,8),
+(9,'2025-09-15 16:20:01.400004',true,'2025-09-15 16:20:01.400004',NULL,'2020-04-15',NULL,'a',NULL,'correo9@cts.com','555-1000-0009','Calle Reforma 9, Ciudad MX','[{"name":"Contacto9","relationship":"Amigo","phone":"+525510000009"}]'::jsonb,'Soltero/a','900000000000009',1,4,9),
+(10,'2025-09-15 16:20:01.500005',true,'2025-09-15 16:20:01.500005',NULL,'2020-05-15',NULL,'a',NULL,'correo10@cts.com','555-1000-0010','Calle Reforma 10, Ciudad MX','[{"name":"Contacto10","relationship":"Hermana","phone":"+525510000010"}]'::jsonb,'Casado/a','1000000000000010',2,1,10),
+(11,'2025-09-15 16:20:01.600006',true,'2025-09-15 16:20:01.600006',NULL,'2020-06-15',NULL,'a',NULL,'correo11@cts.com','555-1000-0011','Calle Reforma 11, Ciudad MX','[{"name":"Contacto11","relationship":"Padre","phone":"+525510000011"}]'::jsonb,'Divorciado/a','1100000000000011',3,2,11),
+(12,'2025-09-15 16:20:01.700007',true,'2025-09-15 16:20:01.700007',NULL,'2020-07-15',NULL,'a',NULL,'correo12@cts.com','555-1000-0012','Calle Reforma 12, Ciudad MX','[{"name":"Contacto12","relationship":"Madre","phone":"+525510000012"}]'::jsonb,'Soltero/a','1200000000000012',1,3,12),
+(13,'2025-09-15 16:20:01.800008',true,'2025-09-15 16:20:01.800008',NULL,'2020-08-15',NULL,'a',NULL,'correo13@cts.com','555-1000-0013','Calle Reforma 13, Ciudad MX','[{"name":"Contacto13","relationship":"Amigo","phone":"+525510000013"}]'::jsonb,'Casado/a','1300000000000013',2,4,13),
+(14,'2025-09-15 16:20:01.900009',true,'2025-09-15 16:20:01.900009',NULL,'2020-09-15',NULL,'a',NULL,'correo14@cts.com','555-1000-0014','Calle Reforma 14, Ciudad MX','[{"name":"Contacto14","relationship":"Hermano","phone":"+525510000014"}]'::jsonb,'Divorciado/a','1400000000000014',3,1,14),
+(15,'2025-09-15 16:20:02.00001',true,'2025-09-15 16:20:02.00001',NULL,'2020-10-15',NULL,'a',NULL,'correo15@cts.com','555-1000-0015','Calle Reforma 15, Ciudad MX','[{"name":"Contacto15","relationship":"Hermana","phone":"+525510000015"}]'::jsonb,'Soltero/a','1500000000000015',1,2,15),
+(16,'2025-09-15 16:20:02.100011',true,'2025-09-15 16:20:02.100011',NULL,'2020-11-15',NULL,'a',NULL,'correo16@cts.com','555-1000-0016','Calle Reforma 16, Ciudad MX','[{"name":"Contacto16","relationship":"Padre","phone":"+525510000016"}]'::jsonb,'Casado/a','1600000000000016',2,3,16),
+(17,'2025-09-15 16:20:02.200012',true,'2025-09-15 16:20:02.200012',NULL,'2020-12-15',NULL,'a',NULL,'correo17@cts.com','555-1000-0017','Calle Reforma 17, Ciudad MX','[{"name":"Contacto17","relationship":"Madre","phone":"+525510000017"}]'::jsonb,'Divorciado/a','1700000000000017',3,4,17),
+(18,'2025-09-15 16:20:02.300013',true,'2025-09-15 16:20:02.300013',NULL,'2021-01-15',NULL,'a',NULL,'correo18@cts.com','555-1000-0018','Calle Reforma 18, Ciudad MX','[{"name":"Contacto18","relationship":"Amigo","phone":"+525510000018"}]'::jsonb,'Soltero/a','1800000000000018',1,1,18),
+(19,'2025-09-15 16:20:02.400014',true,'2025-09-15 16:20:02.400014',NULL,'2021-02-15',NULL,'a',NULL,'correo19@cts.com','555-1000-0019','Calle Reforma 19, Ciudad MX','[{"name":"Contacto19","relationship":"Hermano","phone":"+525510000019"}]'::jsonb,'Casado/a','1900000000000019',2,2,19),
+(20,'2025-09-15 16:20:02.500015',true,'2025-09-15 16:20:02.500015',NULL,'2021-03-15',NULL,'a',NULL,'correo20@cts.com','555-1000-0020','Calle Reforma 20, Ciudad MX','[{"name":"Contacto20","relationship":"Hermana","phone":"+525510000020"}]'::jsonb,'Divorciado/a','2000000000000020',3,3,20),
+(21,'2025-09-15 16:20:02.600016',true,'2025-09-15 16:20:02.600016',NULL,'2021-04-15',NULL,'a',NULL,'correo21@cts.com','555-1000-0021','Calle Reforma 21, Ciudad MX','[{"name":"Contacto21","relationship":"Padre","phone":"+525510000021"}]'::jsonb,'Soltero/a','2100000000000021',1,4,21),
+(22,'2025-09-15 16:20:02.700017',true,'2025-09-15 16:20:02.700017',NULL,'2021-05-15',NULL,'a',NULL,'correo22@cts.com','555-1000-0022','Calle Reforma 22, Ciudad MX','[{"name":"Contacto22","relationship":"Madre","phone":"+525510000022"}]'::jsonb,'Casado/a','2200000000000022',2,1,22),
+(23,'2025-09-15 16:20:02.800018',true,'2025-09-15 16:20:02.800018',NULL,'2021-06-15',NULL,'a',NULL,'correo23@cts.com','555-1000-0023','Calle Reforma 23, Ciudad MX','[{"name":"Contacto23","relationship":"Amigo","phone":"+525510000023"}]'::jsonb,'Divorciado/a','2300000000000023',3,2,23),
+(24,'2025-09-15 16:20:02.900019',true,'2025-09-15 16:20:02.900019',NULL,'2021-07-15',NULL,'a',NULL,'correo24@cts.com','555-1000-0024','Calle Reforma 24, Ciudad MX','[{"name":"Contacto24","relationship":"Hermano","phone":"+525510000024"}]'::jsonb,'Soltero/a','2400000000000024',1,3,24),
+(32,'2025-09-16 10:11:43.01815',true,'2025-09-16 10:11:43.01815',NULL,'2025-09-13',NULL,NULL,NULL,'lauragomez98@mail.com','555-7890-1234','Av. las palmas 123, monterrey, nuevo león','[{"name":"María Ramírez","relationship":"Madre","phone":"+525511987654"}]'::jsonb,'Soltero/a','123456789012345',2,2,88);
+
 
 -- Tabla type_document
 INSERT INTO public.type_document
@@ -142,73 +186,125 @@ VALUES
 
 
 INSERT INTO public.employee_has_positions
-(id, created_at, available, updated_at, deleted_at, "employeeIdId", "positionIdId")
+(id, created_at, available, updated_at, deleted_at, employee_id, position_id)
 VALUES
-(35, '2025-08-05 12:56:27.72011', true, '2025-08-05 12:56:27.72011', NULL, 1, 37),
-(36, '2025-08-05 12:57:00.658405', true, '2025-08-05 12:57:00.658405', NULL, 2, 48),
-(39, '2025-08-05 12:57:58.788179', true, '2025-08-05 12:57:58.788179', NULL, 5, 52),
-(40, '2025-08-05 12:57:58.793591', true, '2025-08-05 12:57:58.793591', NULL, 6, 53),
-(41, '2025-08-05 12:58:18.226057', true, '2025-08-05 12:58:18.226057', NULL, 18, 54),
-(42, '2025-08-05 12:58:33.334809', true, '2025-08-05 12:58:33.334809', NULL, 21, 55),
-(44, '2025-08-05 12:58:45.481632', true, '2025-08-05 12:58:45.481632', NULL, 22, 57),
-(37, '2025-08-05 12:57:07.109638', true, '2025-08-05 12:57:07.109638', NULL, 3, 52),
-(38, '2025-08-05 12:57:12.945889', true, '2025-08-05 12:57:12.945889', NULL, 4, 53);
+(25,'2025-09-16 10:11:43.01815',true,'2025-09-16 10:11:43.01815',NULL,32,60),
+(1,'2025-09-15 16:29:09.482281',true,'2025-09-15 16:29:09.482281',NULL,1,37),
+(2,'2025-09-15 16:29:35.768279',true,'2025-09-15 16:29:35.768279',NULL,2,38),
+(3,'2025-09-15 16:29:35.776617',true,'2025-09-15 16:29:35.776617',NULL,3,39),
+(4,'2025-09-15 16:29:35.77998',true,'2025-09-15 16:29:35.77998',NULL,5,41),
+(5,'2025-09-15 16:29:35.78173',true,'2025-09-15 16:29:35.78173',NULL,6,42),
+(6,'2025-09-15 16:29:35.783238',true,'2025-09-15 16:29:35.783238',NULL,7,43),
+(7,'2025-09-15 16:29:35.786082',true,'2025-09-15 16:29:35.786082',NULL,8,44),
+(8,'2025-09-15 16:29:35.787615',true,'2025-09-15 16:29:35.787615',NULL,9,45),
+(9,'2025-09-15 16:30:27.920428',true,'2025-09-15 16:30:27.920428',NULL,10,47),
+(10,'2025-09-15 16:30:27.925749',true,'2025-09-15 16:30:27.925749',NULL,11,48),
+(11,'2025-09-15 16:30:27.927994',true,'2025-09-15 16:30:27.927994',NULL,12,49),
+(12,'2025-09-15 16:30:27.932991',true,'2025-09-15 16:30:27.932991',NULL,15,52),
+(13,'2025-09-15 16:30:27.934265',true,'2025-09-15 16:30:27.934265',NULL,16,53),
+(14,'2025-09-15 16:30:27.935544',true,'2025-09-15 16:30:27.935544',NULL,17,54),
+(15,'2025-09-15 16:30:27.936778',true,'2025-09-15 16:30:27.936778',NULL,18,55),
+(16,'2025-09-15 16:31:26.848332',true,'2025-09-15 16:31:26.848332',NULL,19,56),
+(17,'2025-09-15 16:31:26.856342',true,'2025-09-15 16:31:26.856342',NULL,20,57),
+(18,'2025-09-15 16:31:26.857957',true,'2025-09-15 16:31:26.857957',NULL,21,58),
+(19,'2025-09-15 16:31:26.859227',true,'2025-09-15 16:31:26.859227',NULL,22,59),
+(20,'2025-09-15 16:31:26.860276',true,'2025-09-15 16:31:26.860276',NULL,23,60),
+(21,'2025-09-15 16:31:26.861141',true,'2025-09-15 16:31:26.861141',NULL,24,61),
+(22,'2025-09-15 16:30:27.929797',true,'2025-09-15 16:30:27.929797',NULL,13,56),
+(23,'2025-09-15 16:30:27.931628',true,'2025-09-15 16:30:27.931628',NULL,14,57),
+(24,'2025-09-15 16:29:35.77838',true,'2025-09-15 16:29:35.77838',NULL,4,58);
 
-INSERT INTO public.projects
-(id, created_at, available, updated_at, deleted_at, contract_number, name, description, start_date, end_date, number_expedients, number_images, productions_days, sum_productions, status, "isExternal")
-VALUES
-(2, '2025-07-22 18:55:09.696641', true, '2025-07-22 18:55:09.696641', NULL, '0198329012839102', 'Prueba de proyecto grande', 'Proyecto mas poderoso', '2025-07-04', '2025-07-25', 12, 0, 12, 12, 'EVALUATION', false),
-(3, '2025-07-22 19:04:39.863', true, '2025-07-22 19:04:39.863', NULL, '0198329012839102', 'Prueba de proyecto grande', 'Proyecto mas poderoso', '2025-07-05', '2025-07-26', 12, 0, 12, 12, 'EVALUATION', false),
-(4, '2025-07-22 19:06:03.541', true, '2025-07-22 19:06:03.541', NULL, '0198329012839102', 'Prueba de proyecto grande', 'Proyecto mas poderoso', '2025-07-05', '2025-07-26', 12, 0, 12, 12, 'EVALUATION', false),
-(5, '2025-07-23 18:06:25.589714', true, '2025-07-23 18:06:25.589714', NULL, '0198329012839102', 'Prueba de proyecto grande', 'Proyecto mas poderoso', '2025-07-04', '2025-07-25', 12, 0, 12, 12, 'EVALUATION', false),
-(6, '2025-07-23 18:08:19.799702', true, '2025-07-23 18:08:19.799702', NULL, '12ZWM1231', 'Proyecto', 'Descripción del proyecto', '2025-07-04', '2025-12-01', 12000, 0, 1200, 12000, 'EVALUATION', false),
-(7, '2025-07-25 23:11:21.819', true, '2025-07-25 23:11:21.819', NULL, '12ZWM1231', 'Proyecto', 'Descripción del proyecto', '2025-07-04', '2025-12-01', 12000, 0, 1200, 12000, 'EVALUATION', false),
-(8, '2025-07-31 16:31:55.691', true, '2025-07-31 16:31:55.691', NULL, 'CT-2025-0012', 'Contrato de servicios audiovisuales', 'Contrato para la producción de material audiovisual para campañas institucionales.', '2025-07-31', '2025-12-30', 10000, 100000, 8000, 100000, 'ACTIVE', false),
-(9, '2025-07-22 19:04:39.863', true, '2025-07-22 19:04:39.863', NULL, '0198329012839102', 'Prueba de proyecto grande', 'Proyecto mas poderoso', '2025-07-05', '2025-07-26', 12, 0, 12, 12, 'EVALUATION', false),
-(10, '2025-07-22 19:06:03.541', true, '2025-07-22 19:06:03.541', NULL, '0198329012839102', 'Prueba de proyecto grande', 'Proyecto mas poderoso', '2025-07-05', '2025-07-26', 12, 0, 12, 12, 'EVALUATION', false),
-(11, '2025-07-22 19:04:39.863', true, '2025-07-22 19:04:39.863', NULL, '0198329012839102', 'Prueba de proyecto grande', 'Proyecto mas poderoso', '2025-07-05', '2025-07-26', 12, 0, 12, 12, 'EVALUATION', false),
-(12, '2025-07-22 19:06:03.541', true, '2025-07-22 19:06:03.541', NULL, '0198329012839102', 'Prueba de proyecto grande', 'Proyecto mas poderoso', '2025-07-05', '2025-07-26', 12, 0, 12, 12, 'EVALUATION', false),
-(1, '2025-07-22 18:47:54.909169', true, '2025-07-22 18:47:54.909169', NULL, '0198329012839102', 'Prueba de proyecto grande', 'Proyecto mas poderoso', '2025-07-04', '2025-12-25', 12, 0, 1200, 12000, 'EVALUATION', true);
+insert into public.projects (
+    id,	created_at,	available, updated_at,	deleted_at,	"isExternal", contract_number, name, description, start_date, end_date, number_expedients, number_images, productions_days, sum_productions, status) 
+    values (
+    1,'2025-09-13 18:24:33.261711',true,'2025-09-13 18:24:33.261711',null, false,'','Centro de Tecnologías del Sureste','CTS','2020-01-01','2020-01-01',0,0,0,0,'ACTIVE');
+
 
 INSERT INTO public.extension
 (id, created_at, available, updated_at, deleted_at, number_expedients, start_date, end_date, "projectId")
 VALUES
-(3, '2025-07-31 18:47:53.61', true, '2025-07-31 18:47:53.61', NULL, 5000, '2026-01-06', '2026-03-14', 8);
+();
 
-INSERT INTO public.headquarters
-(id, created_at, available, updated_at, deleted_at, name, address, city, postal_code, phone, production_days, number_expedients, sum_productions, status, "projectId", start_date, end_date)
+INSERT INTO public.headquarters (id, created_at, available, updated_at, deleted_at, name, address, city, postal_code, phone, start_date, end_date, production_days, number_expedients, sum_productions, status, project_id)
 VALUES
-(9, '2025-07-28 21:02:35.347949', true, '2025-07-28 21:02:35.347949', NULL, 'Tecnologias de la informacion y comunicacion', 'Ciudad de mexico', 'Mexico', '07877', '+525539039231', 3, 4, 2, 'EVALUATION', 1, '2025-07-11', '2025-07-21'),
-(8, '2025-07-28 16:28:01.275803', true, '2025-07-30 21:17:28.95827', NULL, 'Company def actualizada', '62413 industrial park', 'Metropolis', '06500', '+529933234290', 6000, 6000, 6000, 'ACTIVE', 1, '2025-07-04', '2025-11-30'),
-(10, '2025-07-31 16:37:38.947925', true, '2025-07-31 16:37:38.947925', NULL, 'Planta de producción norte', 'Carretera federal 45 km 12, parque industrial la luz', 'León', '37207', '+524777001122', 90, 4000, 4000, 'ACTIVE', 8, '2025-08-04', '2025-12-19'),
-(11, '2025-07-31 16:40:56.939869', true, '2025-07-31 16:40:56.939869', NULL, 'Planta de producción sur', 'Av. tecnológico 200, parque industrial innovación', 'Querétaro', '76159', '+524422223344', 120, 6000, 6000, 'ACTIVE', 8, '2025-07-31', '2025-12-30');
+(1, '2025-09-13 18:26:22.514128', TRUE, '2025-09-13 18:26:22.514128', NULL, 'Rio Nilo', 'C. Rio Nilo #90, Piso 3. Alcaldia Cuahutemoc, CDMX', 'CDMX', '06500', '+529141398454', '2023-01-01', '2023-01-01', 0, 0, 0, 'ACTIVE', 1),
+(2, '2025-09-13 18:26:22.514128', TRUE, '2025-09-13 18:26:22.514128', NULL, 'La Ceiba', 'C. La Ceiba #. Villahermosa, Tabasco', 'Villahermosa', '80600', '+529141398454', '2023-01-01', '2023-01-01', 0, 0, 0, 'ACTIVE', 1);
+
 
 INSERT INTO public.headquarters_position_quota
 (id, created_at, available, updated_at, deleted_at, max_employee, position_id, "headquartersId")
 VALUES
-(19, '2025-07-30 16:29:57.613746', true, '2025-07-30 16:29:57.613746', NULL, 6, 4, 8),
-(15, '2025-07-28 16:28:01.275', true, '2025-07-28 16:28:01.275', NULL, 18, 1, 8),
-(14, '2025-07-28 16:28:01.275', true, '2025-07-28 16:28:01.275', NULL, 2, 2, 8),
-(23, '2025-07-31 16:40:56.939869', true, '2025-07-31 16:40:56.939869', NULL, 1, 2, 11),
-(24, '2025-07-31 16:40:56.939869', true, '2025-07-31 16:40:56.939869', NULL, 10, 1, 11),
-(16, '2025-07-28 21:02:35.347949', true, '2025-07-28 21:02:35.347949', NULL, 1, 48, 9),
-(17, '2025-07-28 21:02:35.347949', true, '2025-07-28 21:02:35.347949', NULL, 1, 52, 9),
-(20, '2025-07-31 16:37:38.947925', true, '2025-07-31 16:37:38.947925', NULL, 1, 53, 9),
-(21, '2025-07-31 16:37:38.947925', true, '2025-07-31 16:37:38.947925', NULL, 1, 54, 9),
-(22, '2025-07-31 16:37:38.947925', true, '2025-07-31 16:37:38.947925', NULL, 1, 55, 9);
+();
 
 INSERT INTO public.staff
-(id, created_at, available, updated_at, deleted_at, "employeeHasPositionsId", "headquarterId", "parentId")
+(id, created_at, available, updated_at, deleted_at, employee_has_positions_id, headquarter_id, "parentId")
 VALUES
-(36, '2025-08-15 21:32:47.596036', true, '2025-08-15 21:32:47.596036', NULL, 36, 9, NULL),
-(40, '2025-08-15 22:05:37.974444', true, '2025-08-15 22:08:30.705432', NULL, 37, 9, 36);
+(1,'2025-09-15 16:39:41.713686',true,'2025-09-15 16:39:41.713686',NULL,1,1,NULL),
+(2,'2025-09-15 16:39:45.901579',true,'2025-09-15 16:39:45.901579',NULL,2,1,NULL),
+(3,'2025-09-15 16:39:48.451202',true,'2025-09-15 16:39:48.451202',NULL,3,1,NULL),
+(4,'2025-09-15 16:39:50.956161',true,'2025-09-15 16:39:50.956161',NULL,4,1,NULL),
+(5,'2025-09-15 16:40:26.745429',true,'2025-09-15 16:40:26.745429',NULL,5,1,NULL),
+(6,'2025-09-15 16:40:30.278544',true,'2025-09-15 16:40:30.278544',NULL,6,1,NULL),
+(7,'2025-09-15 16:40:34.492226',true,'2025-09-15 16:40:34.492226',NULL,7,1,NULL),
+(8,'2025-09-15 16:41:00.177304',true,'2025-09-15 16:41:00.177304',NULL,8,1,NULL),
+(9,'2025-09-15 16:41:04.588484',true,'2025-09-15 16:41:04.588484',NULL,9,1,NULL),
+(10,'2025-09-15 16:41:07.162346',true,'2025-09-15 16:41:07.162346',NULL,10,1,NULL),
+(11,'2025-09-15 16:41:21.456463',true,'2025-09-15 16:41:21.456463',NULL,11,1,NULL),
+(16,'2025-09-15 17:34:45.053208',true,'2025-09-15 17:34:45.053208',NULL,12,1,10),
+(17,'2025-09-15 17:39:08.580527',true,'2025-09-15 17:39:08.580527',NULL,13,1,10),
+(18,'2025-09-15 17:39:08.583698',true,'2025-09-15 17:39:08.583698',NULL,14,1,10),
+(19,'2025-09-15 17:39:08.585762',true,'2025-09-15 17:39:08.585762',NULL,15,1,10),
+(20,'2025-09-15 17:39:08.587346',true,'2025-09-15 17:39:08.587346',NULL,16,1,17),
+(21,'2025-09-15 17:50:01.237242',true,'2025-09-15 17:50:01.237242',NULL,17,1,19),
+(22,'2025-09-15 17:50:01.246134',true,'2025-09-15 17:50:01.246134',NULL,18,1,16),
+(23,'2025-09-15 17:50:01.248088',true,'2025-09-15 17:50:01.248088',NULL,19,1,18),
+(24,'2025-09-15 17:50:01.249528',true,'2025-09-15 17:50:01.249528',NULL,20,1,8),
+(25,'2025-09-15 17:50:01.250735',true,'2025-09-15 17:50:01.250735',NULL,21,1,7),
+(26,'2025-09-15 17:53:05.471482',true,'2025-09-15 17:53:05.471482',NULL,22,1,17),
+(27,'2025-09-15 17:53:05.479964',true,'2025-09-15 17:53:05.479964',NULL,23,1,19),
+(28,'2025-09-15 17:55:07.543343',true,'2025-09-15 17:55:07.543343',NULL,24,1,16),
+(31,'2025-09-16 10:11:43.01815',true,'2025-09-16 10:11:43.01815',NULL,25,1,8);
 
-INSERT INTO public.staff_closure
-(id_ancestor, id_descendant)
-VALUES
-(36, 36),
-(40, 40),
-(36, 40);
+
+INSERT INTO public.staff_closure (id_ancestor, id_descendant) VALUES
+(1,1),
+(2,2),
+(3,3),
+(4,4),
+(5,5),
+(6,6),
+(7,7),
+(8,8),
+(9,9),
+(10,10),
+(11,11),
+(16,16),
+(10,16),
+(17,17),
+(10,17),
+(18,18),
+(10,18),
+(19,19),
+(10,19),
+(20,20),
+(17,20),
+(21,21),
+(19,21),
+(22,22),
+(16,22),
+(23,23),
+(8,23),
+(25,25),
+(7,25),
+(26,26),
+(17,26),
+(27,27),
+(19,27),
+(28,28),
+(16,28),
+(31,31),
+(8,31);
+
 
 
 INSERT INTO public.profiles
@@ -283,8 +379,7 @@ VALUES
 (6, '2025-07-16 17:58:53.885', true, '2025-07-16 17:58:53.885', NULL, 'juan hernández lópez', '$2b$10$cc60UUvV6GIncjJxVVsJM.rbNkyhWe28.8hkqiWHwElHhxybkOW1G', NULL, NULL);
 
 INSERT INTO public.emails
-(id, created_at, available, updated_at, deleted_at, email, status, user_id, employee_id, required_access)
+(id, created_at, available, updated_at, deleted_at, email, status, required_access, user_id, employee_id)
 VALUES
-(5, '2025-07-14 19:29:18.803379', true, '2025-07-16 17:58:53.885291', NULL, 'adan.imh@gmail.com', false, 6, 18, true),
-(7, '2025-07-15 17:59:40.083446', true, '2025-07-15 18:02:13.022099', NULL, 'carl.fs@centrodetecnologias.com.mx', false, NULL, 21, true),
-(8, '2025-07-31 15:42:59.996617', true, '2025-07-31 19:43:55.171354', NULL, 'adan@centrodetecnologias.com.mx', false, 9, 22, true);
+(64,'2025-09-16 10:11:43.01815',true,'2025-09-16 10:11:43.01815',NULL,'rh@empresaejemplo.com.mx',false,true,NULL,88);
+
