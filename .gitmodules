@@ -25,3 +25,6 @@
 [submodule "marketing-ms"]
 	path = marketing-ms
 	url = git@github.com:CTS-Operaciones/CTS-MARKETING.git
+[submodule "documents-generator"]
+	path = documents-generator
+	url = git@github.com:CTS-Operaciones/CTS-DOCUMENTS-GENERATOR.git
