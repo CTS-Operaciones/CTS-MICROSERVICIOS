@@ -344,7 +344,7 @@ VALUES
 (6, '2025-07-15 16:17:36.773', true, '2025-07-15 16:24:56.523295', NULL, 'prueba dev', 'Permiso de prueba para dev');
 
 INSERT INTO public."permission_has_module"
-(id, created_at, available, updated_at, deleted_at, "permissionId", "moduleId")
+(id, created_at, available, updated_at, deleted_at, permission_id, module_id)
 VALUES
 (1, '2025-07-10 23:56:58.814556', true, '2025-07-10 23:56:58.814556', NULL, 1, 1),
 (2, '2025-07-10 23:56:58.814556', true, '2025-07-10 23:56:58.814556', NULL, 4, 1),
@@ -373,7 +373,7 @@ VALUES
 
 
 INSERT INTO public.users
-(id, created_at, available, updated_at, deleted_at, username, password, "roleId", "profileId")
+(id, created_at, available, updated_at, deleted_at, username, password, role_id, profile_id)
 VALUES
 (9, '2025-07-31 19:43:55.171', true, '2025-07-31 19:43:55.171', NULL, 'juan carlos ramírez lópez', '$2b$10$MOEfypBwKkz978wT8EtlMeGn32ftEStkrIPGi502ohYc36Q51lALS', 1, 1),
 (6, '2025-07-16 17:58:53.885', true, '2025-07-16 17:58:53.885', NULL, 'juan hernández lópez', '$2b$10$cc60UUvV6GIncjJxVVsJM.rbNkyhWe28.8hkqiWHwElHhxybkOW1G', NULL, NULL);
@@ -381,5 +381,5 @@ VALUES
 INSERT INTO public.emails
 (id, created_at, available, updated_at, deleted_at, email, status, required_access, user_id, employee_id)
 VALUES
-(64,'2025-09-16 10:11:43.01815',true,'2025-09-16 10:11:43.01815',NULL,'rh@empresaejemplo.com.mx',false,true,NULL,88);
+(64,'2025-09-16 10:11:43.01815',true,'2025-09-16 10:11:43.01815',NULL,'rh@empresaejemplo.com.mx',false,true,NULL,1);
 
