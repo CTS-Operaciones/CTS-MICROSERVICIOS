@@ -25,3 +25,6 @@
 [submodule "documents-generator"]
 	path = documents-generator
 	url = git@github.com:CTS-Operaciones/CTS-DOCUMENTS-GENERATOR.git
+[submodule "saga-ms"]
+	path = saga-ms
+	url = git@github.com:CTS-Operaciones/CTS-SAGA-MS.git
