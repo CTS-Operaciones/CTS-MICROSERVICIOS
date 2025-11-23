@@ -16,9 +16,6 @@
 [submodule "cts-entities"]
 	path = cts-entities
 	url = git@github.com:CTS-Operaciones/CTS-ENTITIES-MS.git
-[submodule "saga-ms"]
-	path = saga-ms
-	url = git@github.com-cts:CTS-Operaciones/CTS-SAGA-MS.git
 [submodule "notificatios-ms"]
 	path = notificatios-ms
 	url = git@github.com:CTS-Operaciones/CTS-NOTIFICATIONS.git
