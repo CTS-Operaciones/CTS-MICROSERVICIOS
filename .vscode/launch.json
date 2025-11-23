@@ -15,6 +15,54 @@
       "outFiles": [
         "${workspaceFolder}/**/*.js"
       ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Auth MS",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "cwd": "${workspaceFolder}/auth-ms",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": [
+        "run",
+        "au:dev"
+      ],
+      "console": "integratedTerminal",
+      "restart": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Staffing MS",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "cwd": "${workspaceFolder}/staffing-ms",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": [
+        "run",
+        "st:dev"
+      ],
+      "console": "integratedTerminal",
+      "restart": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "RH MS",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "cwd": "${workspaceFolder}/rh-ms",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": [
+        "run",
+        "rh:dev"
+      ],
+      "console": "integratedTerminal",
+      "restart": true
     }
   ]
 }
