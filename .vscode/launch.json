@@ -63,6 +63,22 @@
       ],
       "console": "integratedTerminal",
       "restart": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "DG MS",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "cwd": "${workspaceFolder}/documents-generator",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": [
+        "run",
+        "dc:dev"
+      ],
+      "console": "integratedTerminal",
+      "restart": true
     }
   ]
 }
